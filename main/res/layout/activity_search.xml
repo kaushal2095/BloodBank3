@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/searchblood"
+        android:layout_margin="32sp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_color="@color/red"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow="true"
+        android:background="@color/black"
+        app:civ_shadow_color="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/name_seeker"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/red"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/search_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#fff"
+            android:fadeScrollbars="true"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bloodgroup"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/red"
+            android:textSize="14sp"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/search_blood_group_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#fff"/>
+
+    </LinearLayout>
+    <Button
+    android:id="@+id/search_submit"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:layout_margin="28dp"
+    android:background="@color/red"
+    android:text="@string/submit"
+    android:textColor="@color/white"
+        android:textSize="25sp"
+    android:textStyle="bold"/>
+</LinearLayout>

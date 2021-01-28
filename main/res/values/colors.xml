@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#F62712 </color>
+    <color name="brown"> #640F06</color>
+    <color name="lightOrange"> #F49317 </color>
+    <color name="yellow"> #FAF02B</color>
+    <color name="lightGreen">#5DE73C </color>
+    <color name="fadeBlue">#22F5DE </color>
+    <color name="lightBlue">#22ABF5  </color>
+    <color name="blue">#223CF5  </color>
+    <color name="purple"> #C522F5 </color>
+    <color name="pinkRed">#F52258  </color>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#1A2F7C </color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="43sp"
+    tools:context=".activity.auth.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:src="@drawable/bloodbanklogo"
+            android:layout_margin="32sp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="@color/red"
+            app:civ_shadow_radius="10dp"
+            app:civ_shadow="true"
+            android:background="@color/white"
+            app:civ_shadow_color="@color/black"
+            />
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/login_email_field"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="23dp"
+              >
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/email"
+                  android:inputType="textEmailAddress"
+                  android:textColor="@color/black"
+                  android:textColorHint="@color/red"
+                  />
+          </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_pass_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="23dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/red"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/login_button"
+            android:background="#f00"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginHorizontal="32sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:text="@string/register"
+            android:textColor="@color/black"
+            android:layout_margin="25sp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/register"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

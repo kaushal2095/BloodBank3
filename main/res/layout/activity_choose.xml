@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.ChooseActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/choose_donate"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/donate"
+        android:layout_margin="32sp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_color="@color/red"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow="true"
+        android:onClick="onClick"
+        android:background="@color/black"
+        app:civ_shadow_color="@color/white"
+        />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/choose_search"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/searchblood"
+        android:layout_margin="32sp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_color="@color/red"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow="true"
+        android:onClick="onClick"
+        android:background="@color/black"
+        app:civ_shadow_color="@color/white"
+        />
+</LinearLayout>
